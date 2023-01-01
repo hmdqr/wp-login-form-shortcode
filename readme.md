@@ -1,30 +1,32 @@
 # Login Form Shortcode
 
-A simple plugin that adds a shortcode for displaying a login form that is optimized for screen reader users.
-
-## Description
-
-This plugin adds a shortcode for displaying a login form that is optimized for screen reader users. The form includes additional accessibility features such as aria-describedby attributes and screen-reader-text elements, which provide additional context and instructions for screen reader users.
-
-To use the shortcode, simply add `[login_form]` to any post or page. The login form will be displayed for logged out users, and will be hidden for logged in users.
+This plugin adds a shortcode for displaying a login form that is optimized for screen reader users and allows users to add custom text to the form. It also includes support for the Polylang plugin, which allows users to translate the form into multiple languages. We welcome any contributions that can help improve this plugin!
 
 ## Installation
 
 1. Upload the plugin files to the `/wp-content/plugins/login-form-shortcode` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress.
-3. Use the shortcode `[login_form]` to display the login form in any post or page.
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Use the shortcode `[login_form]` in your post or page content to display the login form.
 
 ## Frequently Asked Questions
 
-### Can I customize the login form?
+### Can I customize the text that appears on the login form?
 
-Yes, you can customize the login form by modifying the plugin code. The form fields and layout can be modified by editing the `login_form_shortcode()` function in the plugin file.
+Yes, you can add custom text to the login form by including it as content within the shortcode. For example: `[login_form]This is some custom text.[/login_form]` If you do not want to include any custom text, you can simply use the shortcode without any content.
 
-### Will this plugin work with my theme?
+### Does this plugin support multiple languages?
 
-This plugin should work with most WordPress themes. However, some themes may include custom login forms or styles that may conflict with the plugin. If you encounter any issues with the plugin, you can try deactivating your theme or contacting the theme author for support.
+Yes, this plugin includes support for the Polylang plugin, which allows users to translate the form into multiple languages.
+
+### How can I improve the security of the login form?
+
+This plugin includes several security measures such as a nonce field and SSL/TLS protection, but there are additional steps you can take to further secure your login form. Some options include implementing two-factor authentication, monitoring for suspicious login activity, and regularly updating your WordPress installation and plugins.
 
 ## Changelog
 
+### 1.1
+- Added support for the Polylang plugin, allowing users to translate the form into multiple languages.
+- Improved security measures such as a nonce field and SSL/TLS protection to help prevent hacking attempts and man-in-the-middle attacks.
+
 ### 1.0
-* Initial release.
+- Initial release of the plugin.

@@ -24,6 +24,9 @@ This plugin includes several security measures such as a nonce field and SSL/TLS
 
 ## Changelog
 
+### 1.2
+- Added a check to ensure that the plugin is not accessed directly by verifying that the ABSPATH constant has been defined. This helps to prevent potential security vulnerabilities by blocking access to the plugin's files from external sources. This change helps to improve the overall security of the plugin.
+
 ### 1.1
 - Added support for the Polylang plugin, allowing users to translate the form into multiple languages.
 - Improved security measures such as a nonce field and SSL/TLS protection to help prevent hacking attempts and man-in-the-middle attacks.

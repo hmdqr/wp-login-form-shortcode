@@ -6,6 +6,8 @@
  * Author: Hamad M H Al-Qassar
  */
 
+if (!defined('ABSPATH')) exit;
+
 function login_form_shortcode( $atts, $content = null ) {
     if ( !is_user_logged_in() ) {
         $form  = '<form action="' . esc_url( site_url( 'wp-login.php', 'login_post' ) ) . '" method="post">';
